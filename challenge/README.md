@@ -5,14 +5,16 @@ You are the new member of a dynamic engineering team who is preparing to split a
 
 You are tasked with provisioning the Kubernetes cluster to an AWS account with the following considerations:
 - Cluster does not require any nodes be available on public network
-- Cluster resources should be exposed through some type of Ingress
-- Access Permissions should be considered. Provide ability to set specific IAM roles on K8s pods
+- Cluster state and resources should be declarative and stored in Github
+- A bastion should be configured to allow access to cluster nodes
+- Access Permissions should be considered. Be prepared to discuss how to only provide cluster resources with the necessary AWS API access
 - A centralized logging solution should be enabled in the cluster
 - A centralized monitoring solution should be deployed
 
-## Sample Applications to Deploy
+## Guidelines
+To aid in reducing the time required to complete the challenge, please consider the following guidelines:
+- use KOPs as K8s cluster deployment tool
+- limit time needed to complete; we will discuss any items not able to be completed
 
-
-Keep in mind, this is just an assessment and should not a production system.  KISS principle.
-
-Please implement as much of a solution with the considerations above, commit it to a repo and share it with us.
+## Next Steps
+If considered for in-face interview, please be prepared to deploy cluster and recommend best practices for packaging applications for deployment to cluster.  We will also discuss the choices made to fulfill the challenge requirements and understand what you might do differently with more time.
